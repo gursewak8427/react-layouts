@@ -37,3 +37,25 @@
   height: 300px;
   background: lightcoral;
 }
+
+.form{
+  width: 200px;
+}
+
+.input-pass-group{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background: red;
+  width: 100%;
+}
+
+.input-group input {
+  width: 100%;
+}
+
+.input-pass-group .eye {
+  position: absolute;
+  right: 5px;
+  top: 1px;
+}
