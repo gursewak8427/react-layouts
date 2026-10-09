@@ -5,6 +5,7 @@ import AboutPage from "./pages/AboutPage";
 import UserPage from "./pages/UserPage";
 import LoginPage from "./pages/LoginPage";
 import AuthLayout from "./layouts/AuthLayout";
+import ProtectedRoute from "./protected-routes/ProtectedRoute";
 
 
 const App = () => {
@@ -17,7 +18,7 @@ const App = () => {
       <Route path="/" element={<MainLayout />}>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/users/:userId" element={<UserPage />} />
+        <Route path="/users/:userId" element={<ProtectedRoute><UserPage /></ProtectedRoute>} />
       </Route>
 
       <Route path="/auth" element={<AuthLayout />}>
